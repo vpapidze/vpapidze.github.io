@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/vpapidze/static/css/main.e6c13ad2.css",
-    "main.js": "/vpapidze/static/js/main.a94d3322.js",
-    "static/js/787.f5851c98.chunk.js": "/vpapidze/static/js/787.f5851c98.chunk.js",
-    "index.html": "/vpapidze/index.html",
-    "main.e6c13ad2.css.map": "/vpapidze/static/css/main.e6c13ad2.css.map",
-    "main.a94d3322.js.map": "/vpapidze/static/js/main.a94d3322.js.map",
-    "787.f5851c98.chunk.js.map": "/vpapidze/static/js/787.f5851c98.chunk.js.map"
+    "main.css": "/vpapidze.github.io/static/css/main.e6c13ad2.css",
+    "main.js": "/vpapidze.github.io/static/js/main.68b9af98.js",
+    "static/js/787.f5851c98.chunk.js": "/vpapidze.github.io/static/js/787.f5851c98.chunk.js",
+    "index.html": "/vpapidze.github.io/index.html",
+    "main.e6c13ad2.css.map": "/vpapidze.github.io/static/css/main.e6c13ad2.css.map",
+    "main.68b9af98.js.map": "/vpapidze.github.io/static/js/main.68b9af98.js.map",
+    "787.f5851c98.chunk.js.map": "/vpapidze.github.io/static/js/787.f5851c98.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.a94d3322.js"
+    "static/js/main.68b9af98.js"
   ]
 }
