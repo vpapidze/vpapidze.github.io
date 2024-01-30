@@ -101,16 +101,23 @@ export const DataContextProvider: React.FC<{ children: any }> = ({ children }) =
       skills: {
         softSkills: ['Leadership', 'Time Management', 'Problem Solving', 'Communication', 'Teamwork', 'Critical Thinking', 'Collaboration', 'Project Management', 'Flexibility'],
         cloudSkills: [
-          {
-            iconPrefix: 'fab',
-            icon: 'amazon',
-            value: 'AWS IAM',
-          },
-          {
-            iconPrefix: 'fab',
-            icon: 'amazon',
-            value: 'TODO...',
-          },
+          { iconPrefix: 'fab', icon: 'amazon', value: 'AWS IAM' },
+          { iconPrefix: 'fab', icon: 'amazon', value: 'AWS EC2' },
+          { iconPrefix: 'fab', icon: 'amazon', value: 'AWS AMI' },
+          { iconPrefix: 'fab', icon: 'amazon', value: 'AWS EBS' },
+          { iconPrefix: 'fab', icon: 'amazon', value: 'AWS Lambda' },
+          { iconPrefix: 'fab', icon: 'amazon', value: 'AWS API Gateway' },
+          { iconPrefix: 'fab', icon: 'amazon', value: 'AWS RDS' },
+          { iconPrefix: 'fab', icon: 'amazon', value: 'AWS S3' },
+          { iconPrefix: 'fab', icon: 'amazon', value: 'AWS CloudFront' },
+          { iconPrefix: 'fab', icon: 'amazon', value: 'AWS Cognito' },
+          { iconPrefix: 'fab', icon: 'amazon', value: 'AWS Route53' },
+          { iconPrefix: 'fab', icon: 'amazon', value: 'AWS DynamoDB' },
+          { iconPrefix: 'fab', icon: 'amazon', value: 'AWS CloudWatch' },
+          { iconPrefix: 'fab', icon: 'amazon', value: 'AWS CLI' },
+          { iconPrefix: 'fab', icon: 'amazon', value: 'AWS SDK' },
+          { iconPrefix: 'fab', icon: 'amazon', value: 'AWS EFS' },
+          { iconPrefix: 'fab', icon: 'amazon', value: 'AWS ELB' },
           {
             iconPrefix: 'fas',
             icon: 'g',
