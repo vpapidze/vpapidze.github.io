@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { IJob } from "../types/types";
+import { Tag, Tags } from "../common/Tag";
+import { JobProject } from "./JobProject";
 
 const Container = styled.div`
   display: flex;
@@ -41,26 +43,45 @@ const Title = styled.h3`
 const Location = styled.p`
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   opacity: 0.8;
   font-style: italic;
 `;
 
-type Location = IJob['location'];
+const Projects = styled.div`
+  margin: 10px 0;
+`;
 
-// const LOCATIONS: { [Location]: string} = {
-//   [lo]
-// }
+const Footer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+`;
 
-export const JobItem = ({ startDate, endDate, title, company, location }: IJob) => {
+const SectionTitle = styled.span`
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+`;
+
+export const JobItem = ({ startDate, endDate, title, company, location, technologies, projects }: IJob) => {
   return (<Container>
     <Date>{startDate} - {endDate}</Date>
     <Content>
       <Header>
         <Title>{title} <span>at</span> {company}</Title>
-        <Location>{location === 'hybrid' ? 'Hybrid' : location==='onsite' ? 'On-site': 'Remote'}</Location>
+        <Location>{location === 'hybrid' ? 'Hybrid' : location === 'onsite' ? 'On-site' : 'Remote'}</Location>
       </Header>
+      <Projects>
+        {projects.map((p, idx) => (<JobProject key={idx} {...p} />))}
+      </Projects>
+      <Footer>
+        <SectionTitle>Tools & Technologies:</SectionTitle>
+        <Tags>
+          {technologies.map((t, idx) => (<Tag key={idx} title={t.value} icon={t.icon?.[1] || 'default'} iconPrefix={t.icon?.[0]} />))}
+        </Tags>
+      </Footer>
     </Content>
-  </Container>)
+  </Container>);
 };

@@ -60,7 +60,7 @@ export const Sidebar = () => {
     </MetaInfoContainer>
     <MetaInfoContainer title="Trainings & Certifications">
       <Trainings>
-        {trainings.map((tr, idx) => (<Training title={tr.title} icon={[tr.iconPrefix as IconPrefix, tr.icon as IconName]} certified={tr.certified} />))}
+        {trainings.map((tr, idx) => (<Training key={idx} title={tr.title} icon={[tr.iconPrefix as IconPrefix, tr.icon as IconName]} certified={tr.certified} />))}
       </Trainings>
     </MetaInfoContainer>
   </Container>

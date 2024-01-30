@@ -13,17 +13,19 @@ export interface IEducation {
   field: string;
 };
 
+export interface IJobProject {
+  title: string;
+  description?: string;
+  responsibilities: string[];
+  url?: string;
+};
+
 export interface IJob {
   startDate: string;
   endDate: string;
   company: string;
   title: string;
   location: 'onsite' | 'remote' | 'hybrid',
-  projects: {
-    title: string;
-    description?: string;
-    responsibilities: string[];
-    url?: string;
-  }[];
+  projects: IJobProject[];
   technologies: ISkill[];
 }
