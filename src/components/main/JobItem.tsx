@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { IJob } from "../types/types";
+import { IJob } from "../../types/types";
 import { Tag, Tags } from "../common/Tag";
 import { JobProject } from "./JobProject";
 

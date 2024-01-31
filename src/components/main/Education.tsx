@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { IEducation } from "../types/types";
+import { IEducation } from "../../types/types";
 
 const Container = styled.div`
   display: flex;

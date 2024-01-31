@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { IJobProject } from "../types/types";
+import { IJobProject } from "../../types/types";
 import { Tag } from "../common/Tag";
 
 const Container = styled.div`

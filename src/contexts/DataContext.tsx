@@ -1,54 +1,6 @@
 import { createContext } from 'react';
-import { IJob } from '../components/types/types';
+import { IDataProvider } from '../types/types';
 import { profileImage } from '../config/images';
-
-interface ISkill {
-  iconPrefix: string,
-  icon: string,
-  value: string,
-};
-
-interface IPersonalDetail extends ISkill {
-  url?: string;
-}
-
-interface ITrainings {
-  title: string;
-  iconPrefix: string;
-  icon: string;
-  certified: boolean;
-}
-
-interface IEducation {
-  startDate: string,
-  endDate: string,
-  university: string;
-  degree: string;
-  field: string;
-};
-
-interface IDataProvider {
-  personalInfo: {
-    profileImage: string;
-    fullName: string;
-    titles: string[];
-    details: IPersonalDetail[];
-    skills: {
-      softSkills: string[];
-      cloudSkills: ISkill[];
-      frontEndSkills: ISkill[];
-      backEndSkills: ISkill[];
-      devOpsSkills: ISkill[];
-      tools: ISkill[];
-      os: ISkill[];
-      languages: string[];
-    }
-  },
-  trainings: ITrainings[];
-  summary: string;
-  eductaion: IEducation[];
-  jobs: IJob[];
-}
 
 export const DataContext = createContext<IDataProvider>(undefined!);
 
