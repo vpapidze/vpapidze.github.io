@@ -8,4 +8,6 @@ export const defaultTheme = {
   trainingBackground: '#ffffff',
   tainingColor: '#454640',
   mainTextColor: '#454640',
+  hyperLinkColor: '#0066de',
+  mainPadding: '30px 30px 20px 10px',
 }
