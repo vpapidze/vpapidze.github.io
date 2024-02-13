@@ -32,6 +32,7 @@ const IconContainer = styled.span`
 const Title = styled.span`
   color: ${props => props.theme.tagColor};
   line-height: 22px;
+  font-size: 14px;
 `;
 
 export const Tag = ({ title, icon, iconPrefix = 'fas' }: ITagsProps) => {

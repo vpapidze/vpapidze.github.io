@@ -7,7 +7,7 @@ import { Education } from "./Education";
 import { JobItem } from "./JobItem";
 
 const MainContiner = styled.div`
-  padding: ${props => props.theme.padding};
+  padding: ${props => props.theme.mainPadding};
   display: flex;
   flex-direction: column;
   gap: 20px;

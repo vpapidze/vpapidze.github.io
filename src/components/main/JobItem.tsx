@@ -51,6 +51,9 @@ const Location = styled.p`
 
 const Projects = styled.div`
   margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 `;
 
 const Footer = styled.div`
@@ -61,8 +64,7 @@ const Footer = styled.div`
 
 const SectionTitle = styled.span`
   font-size: 16px;
-  font-weight: 500;
-  text-decoration: underline;
+  font-weight: 600;
 `;
 
 export const JobItem = ({ startDate, endDate, title, company, location, technologies, projects }: IJob) => {

@@ -42,7 +42,7 @@ export const userData: IDataProvider = {
       {
         iconPrefix: 'fab',
         icon: 'linkedin',
-        value: 'https://www.linkedin.com/in/vakhopapidze/',
+        value: '@vakhopapidze',
         url: 'https://www.linkedin.com/in/vakhopapidze/',
       }
     ],
@@ -362,7 +362,7 @@ export const userData: IDataProvider = {
   },
   trainings: [
     {
-      title: 'Ultimate AWS Certified Cloud Practitioner',
+      title: 'Ultimate AWS Certified Solutions Architect Associate SAA-C03',
       icon: 'amazon',
       iconPrefix: 'fab',
       certified: false,

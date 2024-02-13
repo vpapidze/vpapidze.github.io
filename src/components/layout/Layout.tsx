@@ -10,17 +10,17 @@ interface Props {
 const Container = styled.article<Pick<Props, 'fullWidth'>>`
   display: flex;
   ${props => !props.fullWidth && css`
-    max-width: 1200px;
+    width: 1200px;
     margin: auto;
   `}
 `;
 
 const SidebarContainer = styled.aside`
-  flex: 1;
+  width: 350px;
 `;
 
 const MainContainer = styled.section`
-  flex: 2;
+  flex: 1;
 `;
 
 export const Layout = ({ sidebar, main, fullWidth }: Props) => {

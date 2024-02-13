@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { IJobProject } from "../../types/types";
 import { Tag } from "../common/Tag";
+import { Link } from "../common/Link";
 
 const Container = styled.div`
   display: flex;
@@ -14,14 +15,17 @@ const Section = styled.div<{ flexDirection?: 'column' | 'row' }>`
   gap: 6px;
 
   ul {
-    margin: 5px 0;
+    margin: 0;
+    padding-left: 30px;
+    li { 
+      margin: 4px;
+    }
   }
 `;
 
 const SectionTitle = styled.span`
   font-size: 16px;
-  font-weight: 500;
-  text-decoration: underline;
+  font-weight: 600;
   line-height: 25px;
 `;
 
@@ -43,7 +47,7 @@ export const JobProject = ({ title, description, responsibilities, url }: IJobPr
     </Section>)}
     {url && (<Section flexDirection="column">
       <SectionTitle>URL: </SectionTitle>
-      <a href={url} target="_blank" rel="noreferrer">{url}</a>
+      <Link href={url} target="_blank" rel="noreferrer">{url}</Link>
     </Section>)}
   </Container>);
 };

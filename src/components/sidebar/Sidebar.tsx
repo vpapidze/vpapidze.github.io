@@ -9,6 +9,7 @@ import { Trainings, Training } from "../common/Trainings";
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 
 const Container = styled.div`
+  height: 100%;
   background-color: ${prop => prop.theme.primaryColor};
 `;
 
