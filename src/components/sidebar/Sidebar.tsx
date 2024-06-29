@@ -14,7 +14,7 @@ const Container = styled.div`
 `;
 
 export const Sidebar = () => {
-  const { personalInfo: { skills: { softSkills, cloudSkills, frontEndSkills, backEndSkills, devOpsSkills, tools, os, languages }, }, trainings } = useContext(DataContext);
+  const { personalInfo: { skills: { softSkills, cloudSkills, frontEndSkills, mobileSkills, backEndSkills, devOpsSkills, tools, os, languages }, }, trainings } = useContext(DataContext);
 
   return <Container>
     <Profile />
@@ -32,6 +32,11 @@ export const Sidebar = () => {
     <MetaInfoContainer title="Front-End Skills">
       <Tags>
         {frontEndSkills.map((skill, idx) => (<Tag key={idx} icon={skill.icon || 'default'} iconPrefix={skill.iconPrefix} title={skill.value} />))}
+      </Tags>
+    </MetaInfoContainer>
+    <MetaInfoContainer title="Mobile Skills">
+      <Tags>
+        {mobileSkills.map((skill, idx) => (<Tag key={idx} icon={skill.icon || 'default'} iconPrefix={skill.iconPrefix} title={skill.value} />))}
       </Tags>
     </MetaInfoContainer>
     <MetaInfoContainer title="Back-End Skills">

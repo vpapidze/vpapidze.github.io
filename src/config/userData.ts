@@ -174,6 +174,18 @@ export const userData: IDataProvider = {
           value: 'jQuery',
         },
       ],
+      mobileSkills: [
+        {
+          iconPrefix: 'fab',
+          icon: 'react',
+          value: 'React native',
+        },
+        {
+          iconPrefix: 'fas',
+          icon: '',
+          value: 'Expo',
+        },
+      ],
       backEndSkills: [
         {
           iconPrefix: 'fab',
@@ -362,10 +374,16 @@ export const userData: IDataProvider = {
   },
   trainings: [
     {
+      title: 'React Native - The Practical Guide',
+      icon: 'react',
+      iconPrefix: 'fab',
+      certified: true,
+    },
+    {
       title: 'Ultimate AWS Certified Solutions Architect Associate SAA-C03',
       icon: 'amazon',
       iconPrefix: 'fab',
-      certified: false,
+      certified: true,
     },
     {
       title: 'Next.js 14 & React - The Complete Guide',
