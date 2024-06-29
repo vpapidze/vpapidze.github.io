@@ -57,6 +57,7 @@ export interface IDataProvider {
       softSkills: string[];
       cloudSkills: ISkillOld[];
       frontEndSkills: ISkillOld[];
+      mobileSkills: ISkillOld[];
       backEndSkills: ISkillOld[];
       devOpsSkills: ISkillOld[];
       tools: ISkillOld[];
