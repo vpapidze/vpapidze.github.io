@@ -443,7 +443,7 @@ export const userData: IDataProvider = {
       projects: [{
         title: 'Layerise',
         description: 'The customer registration & loyalty platform for consumer brands',
-        responsibilities: ['Working on SaaS application, The customer registration & loyalty platform for consumer brands.', 'Designed and developed complex front-end features using modern web development libraries and tools such as React, Typescript, GraphQL, node.js, prisma.', 'Conducted regular code reviews and provided feedback to ensure high-quality code and adherence to coding standards.', 'Collaborated with product managers, designers, and back-end developers to ensure seamless integration of front-end components into dependent distributed services.'],
+        responsibilities: ['Working on SaaS application, The customer registration & loyalty platform for consumer brands.', 'Designed and developed complex front-end features using modern web development libraries and tools such as React, Typescript, GraphQL, node.js, prisma.', 'Conducted regular code reviews and provided feedback to ensure high-quality code and adherence to coding standards.', 'Collaborated with product managers, designers, and other developers to ensure seamless integration of front-end components into dependent distributed services.'],
         url: '',
       }],
       technologies: [
