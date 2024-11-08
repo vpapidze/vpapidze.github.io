@@ -475,6 +475,9 @@ export const userData: IDataProvider = {
           value: 'Prisma',
         },
         {
+          value: 'Redis',
+        },
+        {
           icon: ['fas', 'database'],
           value: 'PostgreSQL',
         },
