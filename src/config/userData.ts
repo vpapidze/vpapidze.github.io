@@ -435,8 +435,66 @@ export const userData: IDataProvider = {
   ],
   jobs: [
     {
-      startDate: 'Mar 2022',
+      startDate: 'Jun 2024',
       endDate: 'Present',
+      company: 'Dancodesit(Denmark)',
+      title: 'Tech Lead / Full-stack Developer',
+      location: 'remote',
+      projects: [{
+        title: 'Ryano Taxi application',
+        description: 'Developing an internal taxi-style mobile app designed to track drivers\' locations, routes, and crew pickups/drop-offs in real time. This solution includes an admin panel for dispatchers, allowing them to efficiently monitor and manage driver activities, optimize routes, and ensure smooth coordination of pickups and drop-offs for the team.',
+        responsibilities: [
+          'Architect and develop scalable API and database services with a focus on high performance and low latency.',
+          'Design resilient, fault-tolerant systems using microservices, cloud infrastructure, and distributed systems.',
+          'Implement load balancing, and monitoring to ensure high availability and reliability.',
+          'Designing, developing, and maintaining web and mobile applications using React and React Native',
+          'Troubleshooting and debugging issues to ensure optimal performance',
+          'Participating in code reviews and providing constructive feedback',
+          'Mentoring junior developers and helping them grow their skills',
+          'Working closely with designers and project managers to deliver high-quality products on time.',
+        ],
+        url: '',
+      }],
+      technologies: [
+        {
+          icon: ['fab', 'js'],
+          value: 'Nest.js',
+        },
+        {
+          icon: ['fab', 'js'],
+          value: 'Typescript',
+        },
+        {
+          icon: ['fab', 'node'],
+          value: 'node.js',
+        },
+        {
+          value: 'GraphQL',
+        },
+        {
+          value: 'Prisma',
+        },
+        {
+          icon: ['fas', 'database'],
+          value: 'PostgreSQL',
+        },
+        {
+          icon: ['fab', 'react'],
+          value: 'Next.js',
+        },
+        {
+          icon: ['fab', 'react'],
+          value: 'react',
+        },
+        {
+          icon: ['fab', 'react'],
+          value: 'react-native',
+        },
+      ],
+    },
+    {
+      startDate: 'Mar 2022',
+      endDate: 'Jun 2024',
       company: 'Layerise',
       title: 'Full-stack Software Developer',
       location: 'remote',
@@ -450,6 +508,10 @@ export const userData: IDataProvider = {
         {
           icon: ['fab', 'react'],
           value: 'react',
+        },
+        {
+          icon: ['fab', 'react'],
+          value: 'react-native',
         },
         {
           icon: ['fab', 'js'],
