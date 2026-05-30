@@ -10,7 +10,7 @@ const MainContiner = styled.div`
   padding: ${props => props.theme.mainPadding};
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: ${props => props.theme.sectionGap};
 `;
 
 export const Main = () => {

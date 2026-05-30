@@ -5,66 +5,84 @@ import { JobProject } from "./JobProject";
 
 const Container = styled.div`
   display: flex;
-  gap: 20px;
-  border-bottom: 1px solid #ededed;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  gap: 24px;
+  border-bottom: 1px solid ${props => props.theme.borderColor};
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 `;
 
 const Date = styled.div`
-  font-size: 14px;
-  opacity: 0.8;
-  line-height: 25px;
+  font-size: 13px;
+  font-weight: 500;
+  color: ${props => props.theme.mainTextColor};
+  opacity: 0.75;
+  line-height: 1.5;
+  min-width: 110px;
+  flex-shrink: 0;
 `;
 
 const Content = styled.div`
   flex: 1;
+  min-width: 0;
 `;
 
 const Header = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 4px;
 `;
 
 const Title = styled.h3`
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 600;
+  color: ${props => props.theme.headingColor};
 
   span {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
-    opacity: 0.8;
+    opacity: 0.7;
   }
 `;
 
 const Location = styled.p`
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  font-weight: 400;
-  opacity: 0.8;
+  font-size: 13px;
+  font-weight: 500;
+  color: ${props => props.theme.mainTextColor};
+  opacity: 0.65;
   font-style: italic;
+  white-space: nowrap;
 `;
 
 const Projects = styled.div`
-  margin: 10px 0;
+  margin: 12px 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 `;
 
 const Footer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
+  margin-top: 4px;
 `;
 
 const SectionTitle = styled.span`
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
+  color: ${props => props.theme.headingColor};
 `;
 
 export const JobItem = ({ startDate, endDate, title, company, location, technologies, projects }: IJob) => {
@@ -81,7 +99,7 @@ export const JobItem = ({ startDate, endDate, title, company, location, technolo
       <Footer>
         <SectionTitle>Tools & Technologies:</SectionTitle>
         <Tags>
-          {technologies.map((t, idx) => (<Tag key={idx} title={t.value} icon={t.icon?.[1] || 'default'} iconPrefix={t.icon?.[0]} />))}
+          {technologies.map((t, idx) => (<Tag key={idx} variant="main" title={t.value} icon={t.icon?.[1] || 'default'} iconPrefix={t.icon?.[0]} />))}
         </Tags>
       </Footer>
     </Content>

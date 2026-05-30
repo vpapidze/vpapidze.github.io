@@ -6,33 +6,38 @@ interface Props {
 }
 
 const Container = styled.div`
-  padding-left:  ${props => props.theme.padding};
+  padding: 0 12px;
+  margin-bottom: 2px;
 `;
 
 const TitleContainer = styled.div`
   position: relative;
+  margin-bottom: 6px;
+
   &::before {
     content: '';
     display: block;
     position: absolute;
     width: 100%;
-    height: 0px;
-    border-top: 1px solid ${props => props.theme.secondaryColor};
-    top: 60%;
+    height: 0;
+    border-top: 1px solid ${props => props.theme.sidebarBorderColor};
+    top: 50%;
   }
 `;
 
 const Title = styled.span`
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
   color: ${props => props.theme.sidebarTextColor};
   background-color: ${props => props.theme.primaryColor};
-  padding-right:  5px;
+  padding-right: 8px;
   position: relative;
   z-index: 1;
 `;
 
 const ChildrenContainer = styled.div`
-  padding: ${props => props.theme.padding};
+  padding-bottom: 10px;
   padding-left: 0;
 `;
 

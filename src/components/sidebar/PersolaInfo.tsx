@@ -11,21 +11,32 @@ const InfoContainer = styled.ul`
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
 `;
 
 const Info = styled.li`
   display: flex;
-  gap: 8px;
-  color: ${props => props.theme.sidebarTextColor};
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 14px;
+  color: ${props => props.theme.sidebarMutedColor};
+
   a {
-    color: inherit;
+    color: ${props => props.theme.sidebarTextColor};
+    text-decoration: none;
+
+    &:hover {
+      color: ${props => props.theme.accentColor};
+    }
   }
 `;
 
 const IconContainer = styled.span`
-  width: 20px;
+  width: 18px;
   text-align: center;
+  color: ${props => props.theme.accentColor};
+  flex-shrink: 0;
+  margin-top: 2px;
 `;
 
 export const PersonalInfo = () => {

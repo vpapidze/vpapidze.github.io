@@ -10,7 +10,9 @@ import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 
 const Container = styled.div`
   height: 100%;
+  min-height: 100vh;
   background-color: ${prop => prop.theme.primaryColor};
+  padding-bottom: 24px;
 `;
 
 export const Sidebar = () => {
@@ -20,47 +22,47 @@ export const Sidebar = () => {
     <Profile />
     <PersonalInfo />
     <MetaInfoContainer title="AI Skills">
-      <Tags>
+      <Tags $compact>
         {aiSkills.map((skill, idx) => (<Tag key={idx} icon={skill.icon || 'default'} iconPrefix={skill.iconPrefix} title={skill.value} />))}
       </Tags>
     </MetaInfoContainer>
     <MetaInfoContainer title="Cloud Skills">
-      <Tags>
+      <Tags $compact>
         {cloudSkills.map((skill, idx) => (<Tag key={idx} icon={skill.icon || 'default'} iconPrefix={skill.iconPrefix} title={skill.value} />))}
       </Tags>
     </MetaInfoContainer>
     <MetaInfoContainer title="Front-End Skills">
-      <Tags>
+      <Tags $compact>
         {frontEndSkills.map((skill, idx) => (<Tag key={idx} icon={skill.icon || 'default'} iconPrefix={skill.iconPrefix} title={skill.value} />))}
       </Tags>
     </MetaInfoContainer>
     <MetaInfoContainer title="Mobile Skills">
-      <Tags>
+      <Tags $compact>
         {mobileSkills.map((skill, idx) => (<Tag key={idx} icon={skill.icon || 'default'} iconPrefix={skill.iconPrefix} title={skill.value} />))}
       </Tags>
     </MetaInfoContainer>
     <MetaInfoContainer title="Back-End Skills">
-      <Tags>
+      <Tags $compact>
         {backEndSkills.map((skill, idx) => (<Tag key={idx} icon={skill.icon || 'default'} iconPrefix={skill.iconPrefix} title={skill.value} />))}
       </Tags>
     </MetaInfoContainer>
     <MetaInfoContainer title="DevOps Skills">
-      <Tags>
+      <Tags $compact>
         {devOpsSkills.map((skill, idx) => (<Tag key={idx} icon={skill.icon || 'default'} iconPrefix={skill.iconPrefix} title={skill.value} />))}
       </Tags>
     </MetaInfoContainer>
     <MetaInfoContainer title="Tools">
-      <Tags>
+      <Tags $compact>
         {tools.map((skill, idx) => (<Tag key={idx} icon={skill.icon || 'default'} iconPrefix={skill.iconPrefix} title={skill.value} />))}
       </Tags>
     </MetaInfoContainer>
     <MetaInfoContainer title="OS">
-      <Tags>
+      <Tags $compact>
         {os.map((skill, idx) => (<Tag key={idx} icon={skill.icon || 'default'} iconPrefix={skill.iconPrefix} title={skill.value} />))}
       </Tags>
     </MetaInfoContainer>
     <MetaInfoContainer title="Languages">
-      <Tags>
+      <Tags $compact>
         {languages.map((lang, idx) => (<Tag key={idx} title={lang} />))}
       </Tags>
     </MetaInfoContainer>
@@ -70,7 +72,7 @@ export const Sidebar = () => {
       </Trainings>
     </MetaInfoContainer>
     <MetaInfoContainer title="Soft Skills">
-      <Tags>
+      <Tags $compact>
         {softSkills.map((skill, idx) => (<Tag key={idx} icon="default" title={skill} />))}
       </Tags>
     </MetaInfoContainer>

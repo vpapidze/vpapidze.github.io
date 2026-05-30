@@ -11,30 +11,33 @@ interface Itraining {
 export const Trainings = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
 `;
 
 const TrainingContainer = styled.div`
   background: ${props => props.theme.trainingBackground};
-  border-radius: 5px;
-  padding: 5px 10px;;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px 12px;
 `;
 
 const Title = styled.h3`
   color: ${props => props.theme.tainingColor};
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 600;
   margin: 0;
   padding: 0;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 
   svg {
-    margin-right: 5px;
+    margin-right: 8px;
+    color: ${props => props.theme.accentColor};
   }
 `;
 
 const State = styled.span`
-  color: ${props => props.theme.tainingColor};
-  font-size: 13px;
+  color: ${props => props.theme.sidebarMutedColor};
+  font-size: 12px;
 `;
 
 export const Training = ({ title, icon, certified = false }: Itraining) => {

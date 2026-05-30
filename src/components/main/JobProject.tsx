@@ -6,34 +6,41 @@ import { Link } from "../common/Link";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 `;
 
 const Section = styled.div<{ flexDirection?: 'column' | 'row' }>`
   display: flex;
-  flex-direction: ${props => props.flexDirection};
-  gap: 6px;
+  flex-direction: ${props => props.flexDirection || 'row'};
+  gap: 8px;
 
   ul {
     margin: 0;
-    padding-left: 30px;
-    li { 
-      margin: 4px;
+    padding-left: 22px;
+    li {
+      margin: 4px 0;
+      line-height: 1.55;
     }
+  }
+
+  > span {
+    line-height: 1.6;
   }
 `;
 
 const SectionTitle = styled.span`
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
-  line-height: 25px;
+  color: ${props => props.theme.headingColor};
+  line-height: 1.5;
+  flex-shrink: 0;
 `;
 
 export const JobProject = ({ title, description, responsibilities, url }: IJobProject) => {
   return (<Container>
     <Section>
       <SectionTitle>Project: </SectionTitle>
-      <Tag title={title} />
+      <Tag variant="main" title={title} />
     </Section>
     {description && (<Section flexDirection="column">
       <SectionTitle>Description: </SectionTitle>

@@ -5,7 +5,8 @@ import { DataContext } from "../../contexts/DataContext";
 
 const SummaryContainer = styled.div`
   color: ${props => props.theme.mainTextColor};
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 1.65;
 `;
 
 export const Summary = () => {
