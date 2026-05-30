@@ -6,7 +6,7 @@ interface Props {
 }
 
 const Container = styled.div`
-  padding: 0 12px;
+  padding: 0 ${props => props.theme.padding};
   margin-bottom: 2px;
 `;
 

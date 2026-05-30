@@ -11,7 +11,6 @@ const Container = styled.div`
 
 const TitleContainer = styled.div`
   position: relative;
-  margin-bottom: 12px;
 
   &::before {
     content: '';
@@ -29,15 +28,15 @@ const Title = styled.span`
   font-weight: 600;
   letter-spacing: 0.02em;
   color: ${props => props.theme.headingColor};
-  margin-left: 0;
+  margin-left: 20px;
   background-color: ${props => props.theme.mainBackground};
-  padding: 0 12px 0 0;
+  padding: 0 10px;
   position: relative;
   z-index: 1;
 `;
 
 const ChildrenContainer = styled.div`
-  padding: 4px 0 8px 0;
+  padding: 10px 0 10px 30px;
 `;
 
 export const InfoContainer = ({ title, children }: IInfoContainer) => {
