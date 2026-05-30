@@ -55,6 +55,7 @@ export interface IDataProvider {
     details: IPersonalDetail[];
     skills: {
       softSkills: string[];
+      aiSkills: ISkillOld[];
       cloudSkills: ISkillOld[];
       frontEndSkills: ISkillOld[];
       mobileSkills: ISkillOld[];

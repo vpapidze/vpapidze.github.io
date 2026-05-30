@@ -14,14 +14,14 @@ const Container = styled.div`
 `;
 
 export const Sidebar = () => {
-  const { personalInfo: { skills: { softSkills, cloudSkills, frontEndSkills, mobileSkills, backEndSkills, devOpsSkills, tools, os, languages }, }, trainings } = useContext(DataContext);
+  const { personalInfo: { skills: { softSkills, aiSkills, cloudSkills, frontEndSkills, mobileSkills, backEndSkills, devOpsSkills, tools, os, languages }, }, trainings } = useContext(DataContext);
 
   return <Container>
     <Profile />
     <PersonalInfo />
-    <MetaInfoContainer title="Soft Skills">
+    <MetaInfoContainer title="AI Skills">
       <Tags>
-        {softSkills.map((skill, idx) => (<Tag key={idx} icon="default" title={skill} />))}
+        {aiSkills.map((skill, idx) => (<Tag key={idx} icon={skill.icon || 'default'} iconPrefix={skill.iconPrefix} title={skill.value} />))}
       </Tags>
     </MetaInfoContainer>
     <MetaInfoContainer title="Cloud Skills">
@@ -68,6 +68,11 @@ export const Sidebar = () => {
       <Trainings>
         {trainings.map((tr, idx) => (<Training key={idx} title={tr.title} icon={[tr.iconPrefix as IconPrefix, tr.icon as IconName]} certified={tr.certified} />))}
       </Trainings>
+    </MetaInfoContainer>
+    <MetaInfoContainer title="Soft Skills">
+      <Tags>
+        {softSkills.map((skill, idx) => (<Tag key={idx} icon="default" title={skill} />))}
+      </Tags>
     </MetaInfoContainer>
   </Container>
 }

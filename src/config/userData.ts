@@ -48,6 +48,20 @@ export const userData: IDataProvider = {
     ],
     skills: {
       softSkills: ['Leadership', 'Time Management', 'Problem Solving', 'Communication', 'Teamwork', 'Critical Thinking', 'Collaboration', 'Project Management', 'Flexibility'],
+      aiSkills: [
+        { iconPrefix: 'fas', icon: 'diagram-project', value: 'RAG' },
+        { iconPrefix: 'fas', icon: 'link', value: 'LangChain' },
+        { iconPrefix: 'fas', icon: 'database', value: 'ChromaDB' },
+        { iconPrefix: 'fas', icon: 'brain', value: 'OpenAI API' },
+        { iconPrefix: 'fas', icon: 'vector-square', value: 'Vector Embeddings' },
+        { iconPrefix: 'fas', icon: 'wand-magic-sparkles', value: 'Prompt Engineering' },
+        { iconPrefix: 'fas', icon: 'robot', value: 'LLMs' },
+        { iconPrefix: 'fas', icon: 'comments', value: 'AI Chatbots' },
+        { iconPrefix: 'fas', icon: 'magnifying-glass', value: 'Semantic Search' },
+        { iconPrefix: 'fas', icon: 'user-gear', value: 'AI Agents' },
+        { iconPrefix: 'fas', icon: 'code', value: 'Claude Code' },
+        { iconPrefix: 'fas', icon: 'laptop-code', value: 'Cursor' },
+      ],
       cloudSkills: [
         { iconPrefix: 'fab', icon: 'amazon', value: 'AWS IAM' },
         { iconPrefix: 'fab', icon: 'amazon', value: 'AWS EC2' },
@@ -416,7 +430,7 @@ export const userData: IDataProvider = {
       certified: true,
     },
   ],
-  summary: 'Experienced Senior Software developer with a demonstrated history of working with international teams. Profcient in an assortment of technologies, including: javascript, Typescript, React.js, node.js, GraphQL, c#, SQL, noSQL and others.',
+  summary: 'Experienced Senior Software developer with a demonstrated history of working with international teams. Profcient in an assortment of technologies, including: javascript, Typescript, React.js, node.js, GraphQL, c#, SQL, noSQL and others. Experienced building AI-powered solutions with RAG pipelines, LangChain, vector databases, and conversational chatbots using OpenAI and related tooling.',
   eductaion: [
     {
       startDate: '2014',
@@ -442,7 +456,7 @@ export const userData: IDataProvider = {
       location: 'remote',
       projects: [{
         title: 'Ryano Taxi application',
-        description: 'Developing an internal taxi-style mobile app designed to track drivers\' locations, routes, and crew pickups/drop-offs in real time. This solution includes an admin panel for dispatchers, allowing them to efficiently monitor and manage driver activities, optimize routes, and ensure smooth coordination of pickups and drop-offs for the team.',
+        description: 'Developing an internal taxi-style mobile app that tracks drivers\' locations, routes, and crew pickups/drop-offs in real time. The platform includes an admin panel for dispatchers to monitor fleet activity, optimize routes, and coordinate pickups and drop-offs. Integrated APIs and a RAG module (LangChain, ChromaDB, OpenAI) enable semantic search and natural-language queries over driver location data. An AI-powered employee chatbot provides internal assistance for common workflows and support requests.',
         responsibilities: [
           'Architect and develop scalable API and database services with a focus on high performance and low latency.',
           'Design resilient, fault-tolerant systems using microservices, cloud infrastructure, and distributed systems.',
@@ -452,6 +466,8 @@ export const userData: IDataProvider = {
           'Participating in code reviews and providing constructive feedback',
           'Mentoring junior developers and helping them grow their skills',
           'Working closely with designers and project managers to deliver high-quality products on time.',
+          'Integrated APIs and built a RAG module for managing and querying driver location data.',
+          'Developed an employee assistance chatbot for internal support and workflow guidance.',
         ],
         url: '',
       }],
@@ -492,6 +508,22 @@ export const userData: IDataProvider = {
         {
           icon: ['fab', 'react'],
           value: 'react-native',
+        },
+        {
+          icon: ['fas', 'brain'],
+          value: 'OpenAI API',
+        },
+        {
+          icon: ['fas', 'link'],
+          value: 'LangChain',
+        },
+        {
+          icon: ['fas', 'database'],
+          value: 'ChromaDB',
+        },
+        {
+          icon: ['fas', 'diagram-project'],
+          value: 'RAG',
         },
       ],
     },
