@@ -10,6 +10,7 @@ interface Props {
 const Container = styled.article<Pick<Props, 'fullWidth'>>`
   display: flex;
   min-height: 100vh;
+  min-width: 1280px;
   background-color: ${props => props.theme.bodyBackground};
 
   ${props => !props.fullWidth && css`
