@@ -14,16 +14,6 @@ export const userData: IDataProvider = {
       },
       {
         iconPrefix: 'fas',
-        icon: 'house',
-        value: 'G. Danelia st. #2, 0186',
-      },
-      {
-        iconPrefix: 'fas',
-        icon: 'cake-candles',
-        value: '10 February, 1991',
-      },
-      {
-        iconPrefix: 'fas',
         icon: 'phone',
         value: '+995 558 402 266',
       },
@@ -388,6 +378,12 @@ export const userData: IDataProvider = {
   },
   trainings: [
     {
+      title: 'Generative AI for NodeJs: OpenAI, LangChain - TypeScript',
+      icon: 'node',
+      iconPrefix: 'fab',
+      certified: true,
+    },
+    {
       title: 'React Native - The Practical Guide',
       icon: 'react',
       iconPrefix: 'fab',
@@ -496,6 +492,18 @@ export const userData: IDataProvider = {
         {
           icon: ['fas', 'database'],
           value: 'PostgreSQL',
+        },
+        {
+          value: 'Micro Services',
+        },
+        {
+          value: 'Kafka',
+        },
+        {
+          value: 'Kubernetes',
+        },
+        {
+          value: 'Terraform',
         },
         {
           icon: ['fab', 'react'],

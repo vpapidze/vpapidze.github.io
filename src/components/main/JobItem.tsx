@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { IJob } from "../../types/types";
 import { Tag, Tags } from "../common/Tag";
 import { JobProject } from "./JobProject";
+import { sortJobTechnologies } from "../../utils/sortJobTechnologies";
 
 const Container = styled.div`
   display: flex;
@@ -99,7 +100,7 @@ export const JobItem = ({ startDate, endDate, title, company, location, technolo
       <Footer>
         <SectionTitle>Tools & Technologies:</SectionTitle>
         <Tags>
-          {technologies.map((t, idx) => (<Tag key={idx} variant="main" title={t.value} icon={t.icon?.[1] || 'default'} iconPrefix={t.icon?.[0]} />))}
+          {sortJobTechnologies(technologies).map((t, idx) => (<Tag key={idx} variant="main" title={t.value} icon={t.icon?.[1] || 'default'} iconPrefix={t.icon?.[0]} />))}
         </Tags>
       </Footer>
     </Content>

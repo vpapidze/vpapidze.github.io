@@ -26,9 +26,9 @@ export const Sidebar = () => {
         {aiSkills.map((skill, idx) => (<Tag key={idx} icon={skill.icon || 'default'} iconPrefix={skill.iconPrefix} title={skill.value} />))}
       </Tags>
     </MetaInfoContainer>
-    <MetaInfoContainer title="Cloud Skills">
+    <MetaInfoContainer title="Back-End Skills">
       <Tags $compact>
-        {cloudSkills.map((skill, idx) => (<Tag key={idx} icon={skill.icon || 'default'} iconPrefix={skill.iconPrefix} title={skill.value} />))}
+        {backEndSkills.map((skill, idx) => (<Tag key={idx} icon={skill.icon || 'default'} iconPrefix={skill.iconPrefix} title={skill.value} />))}
       </Tags>
     </MetaInfoContainer>
     <MetaInfoContainer title="Front-End Skills">
@@ -36,14 +36,14 @@ export const Sidebar = () => {
         {frontEndSkills.map((skill, idx) => (<Tag key={idx} icon={skill.icon || 'default'} iconPrefix={skill.iconPrefix} title={skill.value} />))}
       </Tags>
     </MetaInfoContainer>
+    <MetaInfoContainer title="Cloud Skills">
+      <Tags $compact>
+        {cloudSkills.map((skill, idx) => (<Tag key={idx} icon={skill.icon || 'default'} iconPrefix={skill.iconPrefix} title={skill.value} />))}
+      </Tags>
+    </MetaInfoContainer>
     <MetaInfoContainer title="Mobile Skills">
       <Tags $compact>
         {mobileSkills.map((skill, idx) => (<Tag key={idx} icon={skill.icon || 'default'} iconPrefix={skill.iconPrefix} title={skill.value} />))}
-      </Tags>
-    </MetaInfoContainer>
-    <MetaInfoContainer title="Back-End Skills">
-      <Tags $compact>
-        {backEndSkills.map((skill, idx) => (<Tag key={idx} icon={skill.icon || 'default'} iconPrefix={skill.iconPrefix} title={skill.value} />))}
       </Tags>
     </MetaInfoContainer>
     <MetaInfoContainer title="DevOps Skills">
