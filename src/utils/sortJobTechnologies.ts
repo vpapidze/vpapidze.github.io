@@ -2,7 +2,7 @@ import { ISkill } from '../types/types';
 
 /** Front-end stack labels; everything else is listed first (back-end / infra / AI). */
 const FRONTEND_PATTERN =
-  /react|next\.js|react-native|angular|redux|html|css|stensil|web components|figma|jquery/i;
+  /react|next\.js|react-native|angular|redux|tanstack|html|css|stensil|web components|figma|jquery/i;
 
 export function sortJobTechnologies(technologies: ISkill[]): ISkill[] {
   const backend: ISkill[] = [];

@@ -445,8 +445,59 @@ export const userData: IDataProvider = {
   ],
   jobs: [
     {
-      startDate: 'Jun 2024',
+      startDate: 'Aug 2025',
       endDate: 'Present',
+      company: 'StrategiClear',
+      title: 'Full-stack Developer',
+      location: 'remote',
+      projects: [{
+        title: 'Tonic Security — Agentic Exposure Management',
+        description: 'Building an agentic exposure management platform for Tonic Security: unified visibility into security exposure, orchestration of remediation workflows, and AI-assisted analysis to help teams prioritize and reduce risk across their environments.',
+        responsibilities: [
+          'Design and implement full-stack features for the Agentic Exposure Management application using NestJS and React.',
+          'Develop APIs and data pipelines with Node.js and TypeScript, integrating PostgreSQL and ClickHouse for operational and analytics workloads.',
+          'Build responsive admin and analyst experiences with React and TanStack (Query/Router).',
+          'Deploy and operate services on Microsoft Azure.',
+          'Collaborate with product and security stakeholders to deliver reliable, scalable releases.',
+        ],
+        url: '',
+      }],
+      technologies: [
+        {
+          icon: ['fab', 'node'],
+          value: 'node.js',
+        },
+        {
+          icon: ['fab', 'js'],
+          value: 'Typescript',
+        },
+        {
+          icon: ['fab', 'js'],
+          value: 'Nest.js',
+        },
+        {
+          icon: ['fas', 'database'],
+          value: 'PostgreSQL',
+        },
+        {
+          value: 'ClickHouse',
+        },
+        {
+          icon: ['fab', 'microsoft'],
+          value: 'Azure',
+        },
+        {
+          icon: ['fab', 'react'],
+          value: 'React',
+        },
+        {
+          value: 'TanStack',
+        },
+      ],
+    },
+    {
+      startDate: 'Jun 2024',
+      endDate: 'Jul 2025',
       company: 'Dancodesit(Denmark)',
       title: 'Tech Lead / Full-stack Developer',
       location: 'remote',
@@ -630,7 +681,6 @@ export const userData: IDataProvider = {
           "Architect and deploy new microservices, enriching the application's architecture and paving the way for future scalability.",
           "Address bug fixes and perform code reviews."
         ],
-        url: 'https://terminus.com/website-chat/',
       }],
       technologies: [
         {
