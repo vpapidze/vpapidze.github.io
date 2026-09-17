@@ -446,7 +446,7 @@ export const userData: IDataProvider = {
   jobs: [
     {
       startDate: 'Aug 2025',
-      endDate: 'Present',
+      endDate: 'Sep 2026',
       company: 'StrategiClear',
       title: 'Full-stack Developer',
       location: 'remote',
