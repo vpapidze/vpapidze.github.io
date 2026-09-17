@@ -426,7 +426,8 @@ export const userData: IDataProvider = {
       certified: true,
     },
   ],
-  summary: 'Experienced Senior Software developer with a demonstrated history of working with international teams. Profcient in an assortment of technologies, including: javascript, Typescript, React.js, node.js, GraphQL, c#, SQL, noSQL and others. Experienced building AI-powered solutions with RAG pipelines, LangChain, vector databases, and conversational chatbots using OpenAI and related tooling.',
+  summary: 'Experienced Senior Software developer with a demonstrated history of working with international teams. Proficient in an assortment of technologies, including: javascript, Typescript, React.js, node.js, GraphQL, c#, SQL, noSQL and others. Experienced building AI-powered solutions with RAG pipelines, LangChain, vector databases, and conversational chatbots using OpenAI and related tooling.',
+  summaryV2: 'Experienced Senior Software developer with a demonstrated history of working with international teams. Proficient in an assortment of technologies, including: C#, .NET, SQL, NoSQL, TypeScript, React.js, GraphQL, and others. Experienced building AI-powered solutions with RAG pipelines, LangChain, vector databases, and conversational chatbots using OpenAI and related tooling.',
   eductaion: [
     {
       startDate: '2014',
@@ -494,6 +495,52 @@ export const userData: IDataProvider = {
           value: 'TanStack',
         },
       ],
+      variants: {
+        v2: {
+          projects: [{
+            title: 'Tonic Security — Agentic Exposure Management',
+            description: 'C# and .NET (ASP.NET Core) backend for Tonic Security\'s agentic exposure management platform—unified visibility into security exposure, orchestration of remediation workflows, and AI-assisted analysis to help teams prioritize and reduce risk. React and TanStack power the admin and analyst UI; PostgreSQL, ClickHouse, and Azure support operational and analytics workloads.',
+            responsibilities: [
+              'Develop APIs and data pipelines with C# and .NET (ASP.NET Core), integrating PostgreSQL and ClickHouse for operational and analytics workloads.',
+              'Design and implement full-stack features for the Agentic Exposure Management application using ASP.NET Core and React.',
+              'Build responsive admin and analyst experiences with React and TanStack (Query/Router).',
+              'Deploy and operate services on Microsoft Azure.',
+              'Collaborate with product and security stakeholders to deliver reliable, scalable releases.',
+            ],
+            url: '',
+          }],
+          technologies: [
+            {
+              value: 'C#',
+            },
+            {
+              value: '.NET',
+            },
+            {
+              icon: ['fab', 'js'],
+              value: 'Typescript',
+            },
+            {
+              icon: ['fas', 'database'],
+              value: 'PostgreSQL',
+            },
+            {
+              value: 'ClickHouse',
+            },
+            {
+              icon: ['fab', 'microsoft'],
+              value: 'Azure',
+            },
+            {
+              icon: ['fab', 'react'],
+              value: 'React',
+            },
+            {
+              value: 'TanStack',
+            },
+          ],
+        },
+      },
     },
     {
       startDate: 'Jun 2024',
@@ -503,7 +550,7 @@ export const userData: IDataProvider = {
       location: 'remote',
       projects: [{
         title: 'Ryano Taxi application',
-        description: 'Developing an internal taxi-style mobile app that tracks drivers\' locations, routes, and crew pickups/drop-offs in real time. The platform includes an admin panel for dispatchers to monitor fleet activity, optimize routes, and coordinate pickups and drop-offs. Integrated APIs and a RAG module (LangChain, ChromaDB, OpenAI) enable semantic search and natural-language queries over driver location data. An AI-powered employee chatbot provides internal assistance for common workflows and support requests.',
+        description: 'Developing an internal taxi-style mobile app that tracks drivers\' locations, routes, and crew pickups/drop-offs in real time. The platform includes an admin panel for dispatchers to monitor fleet activity, optimize routes, and coordinate pickups and drop-offs. Integrated APIs and a RAG module (LangChain, ChromaDB, OpenAI) enable semantic search and natural-language queries over driver location data. The employee AI chat application was built with C# and .NET (ASP.NET Core) to integrate cleanly with existing Microsoft-based internal services, provide strong typing and mature tooling for LLM orchestration, and deliver secure, low-latency streaming responses for staff—while the core fleet platform remains on Node.js/NestJS and React.',
         responsibilities: [
           'Architect and develop scalable API and database services with a focus on high performance and low latency.',
           'Design resilient, fault-tolerant systems using microservices, cloud infrastructure, and distributed systems.',
@@ -514,7 +561,7 @@ export const userData: IDataProvider = {
           'Mentoring junior developers and helping them grow their skills',
           'Working closely with designers and project managers to deliver high-quality products on time.',
           'Integrated APIs and built a RAG module for managing and querying driver location data.',
-          'Developed an employee assistance chatbot for internal support and workflow guidance.',
+          'Developed an employee AI chat application with C# and .NET (ASP.NET Core), connecting RAG/OpenAI flows to internal APIs for support and workflow guidance.',
         ],
         url: '',
       }],
@@ -584,6 +631,12 @@ export const userData: IDataProvider = {
           icon: ['fas', 'diagram-project'],
           value: 'RAG',
         },
+        {
+          value: 'C#',
+        },
+        {
+          value: '.NET',
+        },
       ],
     },
     {
@@ -608,18 +661,8 @@ export const userData: IDataProvider = {
           value: 'react-native',
         },
         {
-          icon: ['fab', 'js'],
-          value: 'Typescript',
-        },
-        {
           icon: ['fab', 'node'],
           value: 'node.js',
-        },
-        {
-          value: 'GraphQL',
-        },
-        {
-          value: 'Prisma',
         },
         {
           icon: ['fas', 'database'],
@@ -630,6 +673,45 @@ export const userData: IDataProvider = {
           value: 'Figma',
         }
       ],
+      variants: {
+        v2: {
+          projects: [{
+            title: 'Layerise',
+            description: 'C# and .NET (ASP.NET Core) SaaS backend for Layerise—the customer registration and loyalty platform for consumer brands—with React and React Native clients for web and mobile.',
+            responsibilities: [
+              'Working on SaaS application, The customer registration & loyalty platform for consumer brands.',
+              'Built scalable backend APIs and services with C# and .NET (ASP.NET Core); delivered full-stack features with React and React Native.',
+              'Conducted regular code reviews and provided feedback to ensure high-quality code and adherence to coding standards.',
+              'Collaborated with product managers, designers, and other developers to ensure seamless integration of front-end components into dependent distributed services.',
+            ],
+            url: '',
+          }],
+          technologies: [
+            {
+              value: 'C#',
+            },
+            {
+              value: '.NET',
+            },
+            {
+              icon: ['fas', 'database'],
+              value: 'PostgreSQL',
+            },
+            {
+              icon: ['fab', 'react'],
+              value: 'react',
+            },
+            {
+              icon: ['fab', 'react'],
+              value: 'react-native',
+            },
+            {
+              icon: ['fab', 'figma'],
+              value: 'Figma',
+            },
+          ],
+        },
+      },
     },
     {
       startDate: 'Sep 2021',

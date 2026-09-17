@@ -20,6 +20,11 @@ export interface IJobProject {
   url?: string;
 };
 
+export interface IJobV2Variant {
+  projects: IJobProject[];
+  technologies: ISkill[];
+}
+
 export interface IJob {
   startDate: string;
   endDate: string;
@@ -28,7 +33,12 @@ export interface IJob {
   location: 'onsite' | 'remote' | 'hybrid',
   projects: IJobProject[];
   technologies: ISkill[];
+  variants?: {
+    v2?: IJobV2Variant;
+  };
 }
+
+export type CvVersion = 'default' | 'v2';
 
 export interface ISkillOld {
   iconPrefix: string,
@@ -68,6 +78,7 @@ export interface IDataProvider {
   },
   trainings: ITrainings[];
   summary: string;
+  summaryV2?: string;
   eductaion: IEducation[];
   jobs: IJob[];
 }
