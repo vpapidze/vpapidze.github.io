@@ -550,7 +550,7 @@ export const userData: IDataProvider = {
       location: 'remote',
       projects: [{
         title: 'Ryano Taxi application',
-        description: 'Developing an internal taxi-style mobile app that tracks drivers\' locations, routes, and crew pickups/drop-offs in real time. The platform includes an admin panel for dispatchers to monitor fleet activity, optimize routes, and coordinate pickups and drop-offs. Integrated APIs and a RAG module (LangChain, ChromaDB, OpenAI) enable semantic search and natural-language queries over driver location data. The employee AI chat application was built with C# and .NET (ASP.NET Core) to integrate cleanly with existing Microsoft-based internal services, provide strong typing and mature tooling for LLM orchestration, and deliver secure, low-latency streaming responses for staff—while the core fleet platform remains on Node.js/NestJS and React.',
+        description: 'Developing an internal taxi-style mobile app that tracks drivers\' locations, routes, and crew pickups/drop-offs in real time. The platform includes an admin panel for dispatchers to monitor fleet activity, optimize routes, and coordinate pickups and drop-offs. Integrated APIs and a RAG module (LangChain, ChromaDB, OpenAI) enable semantic search and natural-language queries over driver location data. An AI-powered employee chatbot built with Node.js and NestJS provides internal assistance for common workflows and support requests.',
         responsibilities: [
           'Architect and develop scalable API and database services with a focus on high performance and low latency.',
           'Design resilient, fault-tolerant systems using microservices, cloud infrastructure, and distributed systems.',
@@ -561,7 +561,7 @@ export const userData: IDataProvider = {
           'Mentoring junior developers and helping them grow their skills',
           'Working closely with designers and project managers to deliver high-quality products on time.',
           'Integrated APIs and built a RAG module for managing and querying driver location data.',
-          'Developed an employee AI chat application with C# and .NET (ASP.NET Core), connecting RAG/OpenAI flows to internal APIs for support and workflow guidance.',
+          'Developed an employee AI chat application with Node.js and NestJS, connecting RAG/OpenAI flows to internal APIs for support and workflow guidance.',
         ],
         url: '',
       }],
@@ -631,13 +631,101 @@ export const userData: IDataProvider = {
           icon: ['fas', 'diagram-project'],
           value: 'RAG',
         },
-        {
-          value: 'C#',
-        },
-        {
-          value: '.NET',
-        },
       ],
+      variants: {
+        v2: {
+          projects: [{
+            title: 'Ryano Taxi application',
+            description: 'Developing an internal taxi-style mobile app that tracks drivers\' locations, routes, and crew pickups/drop-offs in real time. The platform includes an admin panel for dispatchers to monitor fleet activity, optimize routes, and coordinate pickups and drop-offs. Integrated APIs and a RAG module (LangChain, ChromaDB, OpenAI) enable semantic search and natural-language queries over driver location data. The employee AI chat application was built with C# and .NET (ASP.NET Core) to integrate cleanly with existing Microsoft-based internal services, provide strong typing and mature tooling for LLM orchestration, and deliver secure, low-latency streaming responses for staff—while the core fleet platform remains on Node.js/NestJS and React.',
+            responsibilities: [
+              'Architect and develop scalable API and database services with a focus on high performance and low latency.',
+              'Design resilient, fault-tolerant systems using microservices, cloud infrastructure, and distributed systems.',
+              'Implement load balancing, and monitoring to ensure high availability and reliability.',
+              'Designing, developing, and maintaining web and mobile applications using React and React Native',
+              'Troubleshooting and debugging issues to ensure optimal performance',
+              'Participating in code reviews and providing constructive feedback',
+              'Mentoring junior developers and helping them grow their skills',
+              'Working closely with designers and project managers to deliver high-quality products on time.',
+              'Integrated APIs and built a RAG module for managing and querying driver location data.',
+              'Developed an employee AI chat application with C# and .NET (ASP.NET Core), connecting RAG/OpenAI flows to internal APIs for support and workflow guidance.',
+            ],
+            url: '',
+          }],
+          technologies: [
+            {
+              icon: ['fab', 'js'],
+              value: 'Nest.js',
+            },
+            {
+              icon: ['fab', 'js'],
+              value: 'Typescript',
+            },
+            {
+              icon: ['fab', 'node'],
+              value: 'node.js',
+            },
+            {
+              value: 'GraphQL',
+            },
+            {
+              value: 'Prisma',
+            },
+            {
+              value: 'Redis',
+            },
+            {
+              icon: ['fas', 'database'],
+              value: 'PostgreSQL',
+            },
+            {
+              value: 'Micro Services',
+            },
+            {
+              value: 'Kafka',
+            },
+            {
+              value: 'Kubernetes',
+            },
+            {
+              value: 'Terraform',
+            },
+            {
+              value: 'C#',
+            },
+            {
+              value: '.NET',
+            },
+            {
+              icon: ['fab', 'react'],
+              value: 'Next.js',
+            },
+            {
+              icon: ['fab', 'react'],
+              value: 'react',
+            },
+            {
+              icon: ['fab', 'react'],
+              value: 'react-native',
+            },
+            {
+              icon: ['fas', 'brain'],
+              value: 'OpenAI API',
+            },
+            {
+              icon: ['fas', 'link'],
+              value: 'LangChain',
+            },
+            {
+              icon: ['fas', 'database'],
+              value: 'ChromaDB',
+            },
+            {
+              icon: ['fas', 'diagram-project'],
+              value: 'RAG',
+            },
+          ],
+        },
+      },
     },
     {
       startDate: 'Mar 2022',
