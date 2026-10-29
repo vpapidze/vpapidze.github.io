@@ -198,6 +198,11 @@ export const userData: IDataProvider = {
         },
         {
           iconPrefix: 'fab',
+          icon: 'python',
+          value: 'Python',
+        },
+        {
+          iconPrefix: 'fab',
           icon: 'js',
           value: 'GraphQL',
         },
@@ -453,10 +458,11 @@ export const userData: IDataProvider = {
       location: 'remote',
       projects: [{
         title: 'Tonic Security — Agentic Exposure Management',
-        description: 'Building an agentic exposure management platform for Tonic Security: unified visibility into security exposure, orchestration of remediation workflows, and AI-assisted analysis to help teams prioritize and reduce risk across their environments.',
+        description: 'Building an agentic exposure management platform for Tonic Security: unified visibility into security exposure, orchestration of remediation workflows, and AI-assisted analysis to help teams prioritize and reduce risk across their environments. Built an AI RAG chat for analysts to query exposure data, policies, and remediation context in natural language.',
         responsibilities: [
           'Design and implement full-stack features for the Agentic Exposure Management application using NestJS and React.',
-          'Develop APIs and data pipelines with Node.js and TypeScript, integrating PostgreSQL and ClickHouse for operational and analytics workloads.',
+          'Develop APIs and data pipelines with Node.js, TypeScript, and Python, integrating PostgreSQL and ClickHouse for operational and analytics workloads.',
+          'Built an AI RAG chat for analysts and operators, enabling natural-language Q&A over exposure data, security findings, and remediation guidance.',
           'Build responsive admin and analyst experiences with React and TanStack (Query/Router).',
           'Deploy and operate services on Microsoft Azure.',
           'Collaborate with product and security stakeholders to deliver reliable, scalable releases.',
@@ -477,6 +483,10 @@ export const userData: IDataProvider = {
           value: 'Nest.js',
         },
         {
+          icon: ['fab', 'python'],
+          value: 'Python',
+        },
+        {
           icon: ['fas', 'database'],
           value: 'PostgreSQL',
         },
@@ -494,14 +504,31 @@ export const userData: IDataProvider = {
         {
           value: 'TanStack',
         },
+        {
+          icon: ['fas', 'robot'],
+          value: 'AI',
+        },
+        {
+          icon: ['fas', 'user-gear'],
+          value: 'AI Agents',
+        },
+        {
+          icon: ['fas', 'server'],
+          value: 'MCP Server',
+        },
+        {
+          icon: ['fas', 'database'],
+          value: 'Vector DB',
+        },
       ],
       variants: {
         v2: {
           projects: [{
             title: 'Tonic Security — Agentic Exposure Management',
-            description: 'C# and .NET (ASP.NET Core) backend for Tonic Security\'s agentic exposure management platform—unified visibility into security exposure, orchestration of remediation workflows, and AI-assisted analysis to help teams prioritize and reduce risk. React and TanStack power the admin and analyst UI; PostgreSQL, ClickHouse, and Azure support operational and analytics workloads.',
+            description: 'C# and .NET (ASP.NET Core) backend for Tonic Security\'s agentic exposure management platform—unified visibility into security exposure, orchestration of remediation workflows, and AI-assisted analysis to help teams prioritize and reduce risk. Built an AI RAG chat so analysts can query exposure data and remediation context in natural language. React and TanStack power the admin and analyst UI; PostgreSQL, ClickHouse, and Azure support operational and analytics workloads.',
             responsibilities: [
-              'Develop APIs and data pipelines with C# and .NET (ASP.NET Core), integrating PostgreSQL and ClickHouse for operational and analytics workloads.',
+              'Develop APIs and data pipelines with C#, .NET (ASP.NET Core), and Python, integrating PostgreSQL and ClickHouse for operational and analytics workloads.',
+              'Built an AI RAG chat for analysts and operators, enabling natural-language Q&A over exposure data, security findings, and remediation guidance.',
               'Design and implement full-stack features for the Agentic Exposure Management application using ASP.NET Core and React.',
               'Build responsive admin and analyst experiences with React and TanStack (Query/Router).',
               'Deploy and operate services on Microsoft Azure.',
@@ -515,6 +542,10 @@ export const userData: IDataProvider = {
             },
             {
               value: '.NET',
+            },
+            {
+              icon: ['fab', 'python'],
+              value: 'Python',
             },
             {
               icon: ['fab', 'js'],
@@ -537,6 +568,22 @@ export const userData: IDataProvider = {
             },
             {
               value: 'TanStack',
+            },
+            {
+              icon: ['fas', 'robot'],
+              value: 'AI',
+            },
+            {
+              icon: ['fas', 'user-gear'],
+              value: 'AI Agents',
+            },
+            {
+              icon: ['fas', 'server'],
+              value: 'MCP Server',
+            },
+            {
+              icon: ['fas', 'database'],
+              value: 'Vector DB',
             },
           ],
         },
